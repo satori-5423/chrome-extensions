@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "LXGWWenKai-Regular Font Extension",
+  "name": "LXGW WenKai Light Font Extension",
   "version": "1.0",
-  "description": "Apply LXGWWenKai-Regular's font to all web pages.",
+  "description": "Apply LXGW WenKai Light to all web pages.",
   "permissions": [
     "activeTab"
   ],
@@ -14,12 +14,6 @@
       "matches": ["<all_urls>"],
       "js": ["content.js"],
       "run_at": "document_start"
-    }
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": ["/LXGWWenKai-Regular.ttf"],
-      "matches": ["<all_urls>"]
     }
   ]
 }
