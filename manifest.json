@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "LXGWWenKai-Regular Font Extension",
+  "version": "1.0",
+  "description": "Apply LXGWWenKai-Regular's font to all web pages.",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["/LXGWWenKai-Regular.ttf"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
