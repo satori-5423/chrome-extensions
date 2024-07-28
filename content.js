@@ -4,16 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
     element.removeAttribute('lang')
   })
 
-  const fontUrl = chrome.runtime.getURL('/LXGWWenKai-Regular.ttf')
   const style = document.createElement('style')
 
   style.textContent = `
+    @import("https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css")
+    
     @font-face {
-      font-family: 'LXGWWenKai-Regular-Font';
-      src: url(${fontUrl}) format('truetype');
+      font-family: 'LXGW WenKai' !important;
     }
     * {
-      font-family: 'LXGWWenKai-Regular-Font' !important;
+      font-family: 'LXGW WenKai' !important;
     }
   `
 
