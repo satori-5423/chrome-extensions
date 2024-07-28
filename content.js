@@ -1,9 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  document.documentElement.removeAttribute('lang')
-  document.querySelectorAll('[lang]').forEach(element => {
-    element.removeAttribute('lang')
-  })
-
   const style = document.createElement('style')
 
   style.textContent = `
