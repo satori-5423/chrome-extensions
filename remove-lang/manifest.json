@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Remove Page's Lang",
+  "version": "1.0",
+  "description": "移除页面lang的元数据",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
